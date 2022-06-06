@@ -116,6 +116,7 @@ nav {
 }
 
 .btn-item {
+  border: 0;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 32px;
@@ -138,6 +139,7 @@ nav {
 /* Features */
 
 .features {
+  list-style: none;
   display: flex;
   margin-top: 94px;
   margin-bottom: 94px;
@@ -200,6 +202,7 @@ nav {
 }
 
 .what-we-do-img {
+  list-style: none;
   display: flex;
 }
 
@@ -229,6 +232,7 @@ nav {
 }
 
 .img-team {
+  list-style: none;
   margin: auto;
   display: flex;
   width: 1170px;
