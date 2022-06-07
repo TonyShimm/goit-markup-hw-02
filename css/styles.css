@@ -1,14 +1,14 @@
 /*Header*/
 
 body {
-  font-family: inherit;
+  font-family: "Roboto", sans-serif;
 }
 
-header {
+.hdr {
   display: flex;
 }
 
-nav {
+.main-navigation {
   display: flex;
 }
 
@@ -52,6 +52,10 @@ nav {
   color: #2196f3;
 }
 
+.site-nav .item :focus {
+  color: #2196f3;
+}
+
 .site-nav .link {
   display: block;
   padding-top: 32px;
@@ -63,6 +67,14 @@ nav {
 .contacts .email {
   width: 135px;
   text-decoration: none;
+  color: #757575;
+}
+
+.email:hover {
+  color: #2196f3;
+}
+
+.email:focus {
   color: #2196f3;
 }
 
@@ -75,6 +87,10 @@ nav {
   text-decoration: none;
 
   color: #757575;
+}
+
+.tel:hover {
+  color: #2196f3;
 }
 
 .contacts {
@@ -103,8 +119,6 @@ nav {
 .hero-title {
   margin-bottom: 40px;
 
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -122,7 +136,6 @@ nav {
   padding-left: 32px;
   padding-right: 32px;
 
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -158,8 +171,6 @@ nav {
 .feature-title {
   margin-bottom: 10px;
 
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -169,8 +180,6 @@ nav {
   color: #212121;
 }
 .feature-text {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -190,8 +199,6 @@ nav {
 .what-we-do-title {
   margin-bottom: 50px;
 
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -204,6 +211,7 @@ nav {
 .what-we-do-img {
   list-style: none;
   display: flex;
+  padding-left: 0;
 }
 
 .what-we-do-img :not(:last-child) {
@@ -220,8 +228,6 @@ nav {
   padding-top: 94px;
   padding-bottom: 50px;
 
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -232,29 +238,27 @@ nav {
 }
 
 .img-team {
+  padding-bottom: 94px;
+  padding-left: 0;
+
   list-style: none;
   margin: auto;
   display: flex;
   width: 1170px;
-
-  padding-bottom: 94px;
-}
-
-.img-team :not(:last-child) {
-  margin-right: 30px;
 }
 
 .team-residents {
   width: 270px;
 }
 
+.team-residents:not(:last-child) {
+  margin-right: 30px;
+}
+
 .residents-names {
   margin-top: 30px;
   margin-bottom: 10px;
 
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -264,8 +268,6 @@ nav {
 }
 
 .residents-position {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -287,23 +289,25 @@ footer {
 
 .logo-footer {
   width: 145px;
-  margin-bottom: 20px;
-
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-decoration: none;
 
   color: #2196f3;
 }
 
-.adress {
-  margin-bottom: 9px;
+.color-text-footer {
+  color: #fff;
+}
 
-  font-family: "Roboto";
-  font-style: normal;
+.adress {
+  margin-top: 9px;
+  margin-bottom: 9px;
+  width: 231px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -312,28 +316,21 @@ footer {
   color: #ffffff;
 }
 
-.mail-footer {
-  margin-bottom: 9px;
+.footer-contacts {
+  list-style: none;
+  padding-left: 0;
+}
 
+.footer-contacts-item {
   width: 231px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
 }
-.tel-footer {
-  width: 231px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+.footer-contacts-list {
+  padding-bottom: 9px;
 }
