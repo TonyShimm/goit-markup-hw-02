@@ -1,13 +1,15 @@
 /*Header*/
 
-body,
-ul {
+body {
+  font-family: "Roboto", sans-serif;
+
+  color: #212121;
+}
+
+.reset {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: "Roboto", sans-serif;
-
-  color: #2121;
 }
 
 .hdr {
@@ -19,28 +21,22 @@ ul {
 }
 
 .logotipe {
-  display: flex;
-  margin-left: 215px;
-
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  align-items: center;
 
   color: #2196f3;
 }
 
 .color-text {
-  color: #000;
+  color: #000000;
 }
 
 .site-nav {
   display: flex;
-
-  padding-left: 93px;
 
   font-weight: 500;
   font-size: 14px;
@@ -50,15 +46,20 @@ ul {
   color: #212121;
 }
 
+.link-current {
+  color: #212121;
+  text-decoration: none;
+}
+
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-item :hover {
+.nav-item a:hover {
   color: #2196f3;
 }
 
-.nav-item :focus {
+.nav-item a:focus {
   color: #2196f3;
 }
 
@@ -66,12 +67,9 @@ ul {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
-  text-decoration: none;
 }
 
 .contacts .email {
-  width: 135px;
   text-decoration: none;
   color: #757575;
 }
@@ -140,17 +138,16 @@ ul {
   padding-left: 32px;
   padding-right: 32px;
 
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  text-decoration: none;
-  text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
 
-  background: #2196f3;
+  background-color: #2196f3;
   color: #ffffff;
 }
 
@@ -177,7 +174,7 @@ ul {
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
@@ -185,7 +182,7 @@ ul {
 }
 .feature-text {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: #757575;
@@ -204,7 +201,7 @@ ul {
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -268,7 +265,7 @@ ul {
 
 .residents-position {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -286,8 +283,7 @@ footer {
 }
 
 .logo-footer {
-  width: 145px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -304,11 +300,11 @@ footer {
 .adress {
   margin-top: 9px;
   margin-bottom: 9px;
-  width: 231px;
 
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  font-style: normal;
 
   color: #ffffff;
 }
@@ -318,10 +314,10 @@ footer {
 }
 
 .footer-contacts-item {
-  width: 231px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-decoration: none;
 
   color: rgba(255, 255, 255, 0.6);
 }
@@ -336,7 +332,12 @@ footer {
   display: flex;
 }
 
+.portf {
+  color: #2196f3;
+}
+
 .btn-portfolio {
+  font-family: inherit;
   border: 0;
   font-weight: 500;
   font-size: 16px;
@@ -344,9 +345,10 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
+  cursor: pointer;
 
   color: #212121;
-  background: #f5f4fa;
+  background-color: #f5f4fa;
 }
 
 .btn-portfolio:hover {
@@ -374,7 +376,6 @@ footer {
 }
 
 .project-type {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
