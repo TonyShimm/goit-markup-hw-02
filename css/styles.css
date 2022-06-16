@@ -12,14 +12,6 @@ body {
   list-style: none;
 }
 
-.hdr {
-  display: flex;
-}
-
-.main-navigation {
-  display: flex;
-}
-
 .logotipe {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -36,8 +28,6 @@ body {
 }
 
 .site-nav {
-  display: flex;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -46,7 +36,7 @@ body {
   color: #212121;
 }
 
-.link-current {
+.link-nav {
   color: #212121;
   text-decoration: none;
 }
@@ -74,16 +64,15 @@ body {
   color: #757575;
 }
 
-.email:hover {
+.contacts-link:hover {
   color: #2196f3;
 }
 
-.email:focus {
+.contacts-link:focus {
   color: #2196f3;
 }
 
-.contacts .tel {
-  width: 122px;
+.contacts-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
@@ -91,16 +80,6 @@ body {
   text-decoration: none;
 
   color: #757575;
-}
-
-.tel:hover {
-  color: #2196f3;
-}
-
-.contacts {
-  display: flex;
-  margin-left: 331px;
-  align-items: center;
 }
 
 .contacts-item:not(:last-child) {
@@ -154,7 +133,6 @@ body {
 /* Features */
 
 .features {
-  display: flex;
   margin-top: 94px;
   margin-bottom: 94px;
   padding-left: 215px;
@@ -208,10 +186,6 @@ body {
   color: #212121;
 }
 
-.what-we-do-img {
-  display: flex;
-}
-
 .what-we-do-img :not(:last-child) {
   margin-right: 30px;
 }
@@ -239,7 +213,6 @@ body {
   padding-bottom: 94px;
 
   margin: auto;
-  display: flex;
   width: 1170px;
 }
 
@@ -274,7 +247,7 @@ body {
 
 /* Footer*/
 
-footer {
+.footer {
   padding-left: 215px;
 
   background: #2f303a;
@@ -328,11 +301,11 @@ footer {
 
 /* PORTFOLIO */
 
-.portfolio-list {
-  display: flex;
+.portf {
+  color: #2196f3;
 }
 
-.portf {
+.stud {
   color: #2196f3;
 }
 
@@ -342,7 +315,6 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
   cursor: pointer;
@@ -354,12 +326,6 @@ footer {
 .btn-portfolio:hover {
   background-color: #2196f3;
   color: #fff;
-}
-
-.btn-list {
-  margin-left: 495px;
-  margin-top: 87px;
-  margin-bottom: 34px;
 }
 
 .portfolio-list :not(:last-child) {
@@ -385,7 +351,6 @@ footer {
 
 .projects {
   width: 1170px;
-  display: flex;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
